@@ -1,0 +1,346 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:tinyBreakout-Symbols
+LIBS:tinyBreakout-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ATTINY13A-S IC1
+U 1 1 56312C64
+P 7950 4050
+F 0 "IC1" H 7150 4450 40  0000 C CNN
+F 1 "ATTINY13A-S" H 8600 3650 40  0000 C CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 8600 4050 35  0001 C CIN
+F 3 "" H 7150 4400 60  0000 C CNN
+	1    7950 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 56312DC5
+P 6700 4550
+F 0 "R2" V 6780 4550 50  0000 C CNN
+F 1 "10KΩ" V 6700 4550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 6630 4550 30  0001 C CNN
+F 3 "" H 6700 4550 30  0000 C CNN
+	1    6700 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 5631315A
+P 9200 4050
+F 0 "C3" H 9225 4150 50  0000 L CNN
+F 1 "100nF" H 9225 3950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 9238 3900 30  0001 C CNN
+F 3 "" H 9200 4050 60  0000 C CNN
+	1    9200 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L LD2979 U1
+U 1 1 56313F82
+P 7150 1450
+F 0 "U1" H 7450 800 50  0000 C CNN
+F 1 "LD2979" H 7150 1600 50  0000 C CNN
+F 2 "tinyBreakout:SOT-23-5L" H 7150 1450 60  0001 C CNN
+F 3 "" H 7150 1450 60  0000 C CNN
+F 4 "LD2979M33TR" H 7150 1450 60  0001 C CNN "MPN"
+F 5 "1184977" H 7150 1450 60  0001 C CNN "Conrad-PN"
+	1    7150 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 56314141
+P 7150 2550
+F 0 "#PWR01" H 7150 2300 50  0001 C CNN
+F 1 "GND" H 7150 2400 50  0000 C CNN
+F 2 "" H 7150 2550 60  0000 C CNN
+F 3 "" H 7150 2550 60  0000 C CNN
+	1    7150 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 56314527
+P 6100 1750
+F 0 "R1" V 6180 1750 50  0000 C CNN
+F 1 "0Ω" V 6100 1750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 6030 1750 30  0001 C CNN
+F 3 "" H 6100 1750 30  0000 C CNN
+	1    6100 1750
+	1    0    0    -1  
+$EndComp
+Text GLabel 8250 1450 2    60   Input ~ 0
+Vcc
+$Comp
+L C C1
+U 1 1 5631461F
+P 5450 1900
+F 0 "C1" H 5475 2000 50  0000 L CNN
+F 1 "1μF" H 5475 1800 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 5488 1750 30  0001 C CNN
+F 3 "" H 5450 1900 60  0000 C CNN
+	1    5450 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 5631467A
+P 7950 1900
+F 0 "C2" H 7975 2000 50  0000 L CNN
+F 1 "1μF" H 7975 1800 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 7988 1750 30  0001 C CNN
+F 3 "" H 7950 1900 60  0000 C CNN
+	1    7950 1900
+	1    0    0    -1  
+$EndComp
+Text GLabel 6100 4900 0    60   Input ~ 0
+Vcc
+Text GLabel 9600 3800 2    60   Input ~ 0
+Vcc
+$Comp
+L CONN_01X06 P1
+U 1 1 56314BC6
+P 3900 3850
+F 0 "P1" H 3900 4200 50  0000 C CNN
+F 1 "CONN_01X06" V 4000 3850 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x03" H 3900 3850 60  0001 C CNN
+F 3 "" H 3900 3850 60  0000 C CNN
+	1    3900 3850
+	-1   0    0    -1  
+$EndComp
+Text GLabel 4400 3600 2    60   Input ~ 0
+MISO
+Text GLabel 4400 3800 2    60   Input ~ 0
+SCK
+Text GLabel 4400 4000 2    60   Input ~ 0
+RESET
+Text GLabel 6300 4300 0    60   Input ~ 0
+RESET
+Text GLabel 4400 3700 2    60   Input ~ 0
+Vcc
+Text GLabel 4400 3900 2    60   Input ~ 0
+MOSI
+$Comp
+L GND #PWR02
+U 1 1 5631538F
+P 4400 4300
+F 0 "#PWR02" H 4400 4050 50  0001 C CNN
+F 1 "GND" H 4400 4150 50  0000 C CNN
+F 2 "" H 4400 4300 60  0000 C CNN
+F 3 "" H 4400 4300 60  0000 C CNN
+	1    4400 4300
+	1    0    0    -1  
+$EndComp
+Text GLabel 6700 3900 0    60   Input ~ 0
+MISO
+Text GLabel 6700 3800 0    60   Input ~ 0
+MOSI
+Text GLabel 6700 4000 0    60   Input ~ 0
+SCK
+$Comp
+L CONN_01X02 P2
+U 1 1 563156CF
+P 4150 1500
+F 0 "P2" H 4150 1650 50  0000 C CNN
+F 1 "CONN_01X02" V 4250 1500 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 4150 1500 60  0001 C CNN
+F 3 "" H 4150 1500 60  0000 C CNN
+	1    4150 1500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 56315804
+P 4550 1700
+F 0 "#PWR03" H 4550 1450 50  0001 C CNN
+F 1 "GND" H 4550 1550 50  0000 C CNN
+F 2 "" H 4550 1700 60  0000 C CNN
+F 3 "" H 4550 1700 60  0000 C CNN
+	1    4550 1700
+	1    0    0    -1  
+$EndComp
+Text Label 4450 1450 0    60   ~ 0
+V+
+$Comp
+L CONN_01X02 P3
+U 1 1 563161F7
+P 7550 4900
+F 0 "P3" H 7550 5050 50  0000 C CNN
+F 1 "CONN_01X02" V 7650 4900 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 7550 4900 60  0001 C CNN
+F 3 "" H 7550 4900 60  0000 C CNN
+	1    7550 4900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P4
+U 1 1 563162BD
+P 7550 5600
+F 0 "P4" H 7550 5750 50  0000 C CNN
+F 1 "CONN_01X02" V 7650 5600 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 7550 5600 60  0001 C CNN
+F 3 "" H 7550 5600 60  0000 C CNN
+	1    7550 5600
+	-1   0    0    -1  
+$EndComp
+Text GLabel 6700 4100 0    60   Input ~ 0
+PB3
+Text GLabel 7950 4850 2    60   Input ~ 0
+PB3
+Text GLabel 6700 4200 0    60   Input ~ 0
+PB4
+Text GLabel 7950 5550 2    60   Input ~ 0
+PB4
+$Comp
+L GND #PWR04
+U 1 1 56316994
+P 8100 5050
+F 0 "#PWR04" H 8100 4800 50  0001 C CNN
+F 1 "GND" H 8100 4900 50  0000 C CNN
+F 2 "" H 8100 5050 60  0000 C CNN
+F 3 "" H 8100 5050 60  0000 C CNN
+	1    8100 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 3800 9600 3800
+Wire Wire Line
+	9200 3800 9200 3900
+Wire Wire Line
+	8950 4300 9200 4300
+Wire Wire Line
+	9200 4300 9200 4200
+Wire Wire Line
+	7150 2150 7150 2550
+Wire Wire Line
+	6700 1950 6100 1950
+Wire Wire Line
+	6100 1950 6100 1900
+Wire Wire Line
+	4350 1450 6700 1450
+Wire Wire Line
+	6100 1450 6100 1600
+Connection ~ 6100 1450
+Wire Wire Line
+	7600 1450 8250 1450
+Wire Wire Line
+	7950 1450 7950 1750
+Connection ~ 7950 1450
+Wire Wire Line
+	5450 1450 5450 1750
+Connection ~ 5450 1450
+Wire Wire Line
+	5450 2050 5450 2300
+Wire Wire Line
+	5450 2300 7150 2300
+Connection ~ 7150 2300
+Wire Wire Line
+	7950 2050 7950 2400
+Wire Wire Line
+	7950 2400 7150 2400
+Connection ~ 7150 2400
+Wire Wire Line
+	6300 4300 6950 4300
+Wire Wire Line
+	6700 4300 6700 4400
+Connection ~ 9200 3800
+Wire Wire Line
+	6100 4900 6700 4900
+Wire Wire Line
+	6700 4900 6700 4700
+Connection ~ 6700 4300
+Wire Wire Line
+	4100 4100 4400 4100
+Wire Wire Line
+	4400 4100 4400 4300
+Wire Wire Line
+	4100 4000 4400 4000
+Wire Wire Line
+	4100 3900 4400 3900
+Wire Wire Line
+	4100 3800 4400 3800
+Wire Wire Line
+	4100 3700 4400 3700
+Wire Wire Line
+	4100 3600 4400 3600
+Wire Wire Line
+	6700 3800 6950 3800
+Wire Wire Line
+	6700 3900 6950 3900
+Wire Wire Line
+	6700 4000 6950 4000
+Wire Wire Line
+	4550 1700 4550 1550
+Wire Wire Line
+	4550 1550 4350 1550
+Wire Wire Line
+	6700 4100 6950 4100
+Wire Wire Line
+	7950 4850 7750 4850
+Wire Wire Line
+	6700 4200 6950 4200
+Wire Wire Line
+	7950 5550 7750 5550
+Wire Wire Line
+	8100 4950 8100 5050
+Wire Wire Line
+	8100 4950 7750 4950
+$Comp
+L GND #PWR05
+U 1 1 56316D31
+P 8100 5800
+F 0 "#PWR05" H 8100 5550 50  0001 C CNN
+F 1 "GND" H 8100 5650 50  0000 C CNN
+F 2 "" H 8100 5800 60  0000 C CNN
+F 3 "" H 8100 5800 60  0000 C CNN
+	1    8100 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 5650 8100 5650
+Wire Wire Line
+	8100 5650 8100 5800
+$EndSCHEMATC
