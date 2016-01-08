@@ -56,10 +56,10 @@ F 3 "" H 7150 4400 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R2
+L R R7
 U 1 1 56312DC5
 P 6700 4550
-F 0 "R2" V 6780 4550 50  0000 C CNN
+F 0 "R7" V 6780 4550 50  0000 C CNN
 F 1 "10KΩ" V 6700 4550 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 6630 4550 30  0001 C CNN
 F 3 "" H 6700 4550 30  0000 C CNN
@@ -102,10 +102,10 @@ F 3 "" H 7150 2550 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R1
+L R R6
 U 1 1 56314527
 P 6100 1750
-F 0 "R1" V 6180 1750 50  0000 C CNN
+F 0 "R6" V 6180 1750 50  0000 C CNN
 F 1 "0Ω" V 6100 1750 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 6030 1750 30  0001 C CNN
 F 3 "" H 6100 1750 30  0000 C CNN
@@ -151,17 +151,17 @@ F 3 "" H 3900 3850 60  0000 C CNN
 	1    3900 3850
 	-1   0    0    -1  
 $EndComp
-Text GLabel 4400 3600 2    60   Input ~ 0
+Text GLabel 5250 3600 2    60   Input ~ 0
 MISO
-Text GLabel 4400 3800 2    60   Input ~ 0
+Text GLabel 5250 3800 2    60   Input ~ 0
 SCK
-Text GLabel 4400 4000 2    60   Input ~ 0
+Text GLabel 5250 4000 2    60   Input ~ 0
 RESET
 Text GLabel 6300 4300 0    60   Input ~ 0
 RESET
-Text GLabel 4400 3700 2    60   Input ~ 0
+Text GLabel 5250 3700 2    60   Input ~ 0
 Vcc
-Text GLabel 4400 3900 2    60   Input ~ 0
+Text GLabel 5250 3900 2    60   Input ~ 0
 MOSI
 $Comp
 L GND #PWR02
@@ -203,7 +203,7 @@ F 3 "" H 4550 1700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 4450 1450 0    60   ~ 0
-V+
+Vin
 $Comp
 L CONN_01X02 P3
 U 1 1 563161F7
@@ -297,15 +297,7 @@ Wire Wire Line
 Wire Wire Line
 	4400 4100 4400 4300
 Wire Wire Line
-	4100 4000 4400 4000
-Wire Wire Line
-	4100 3900 4400 3900
-Wire Wire Line
-	4100 3800 4400 3800
-Wire Wire Line
-	4100 3700 4400 3700
-Wire Wire Line
-	4100 3600 4400 3600
+	4100 4000 5250 4000
 Wire Wire Line
 	6700 3800 6950 3800
 Wire Wire Line
@@ -343,4 +335,64 @@ Wire Wire Line
 	7750 5650 8100 5650
 Wire Wire Line
 	8100 5650 8100 5800
+$Comp
+L R R4
+U 1 1 56902EB2
+P 4700 3600
+F 0 "R4" V 4780 3600 50  0000 C CNN
+F 1 "1kΩ" V 4700 3600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 4630 3600 30  0001 C CNN
+F 3 "" H 4700 3600 30  0000 C CNN
+	1    4700 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 56902F0C
+P 4400 3700
+F 0 "R2" V 4480 3700 50  0000 C CNN
+F 1 "1kΩ" V 4400 3700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 4330 3700 30  0001 C CNN
+F 3 "" H 4400 3700 30  0000 C CNN
+	1    4400 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L R R5
+U 1 1 56902F6C
+P 4700 3800
+F 0 "R5" V 4780 3800 50  0000 C CNN
+F 1 "1kΩ" V 4700 3800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 4630 3800 30  0001 C CNN
+F 3 "" H 4700 3800 30  0000 C CNN
+	1    4700 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L R R3
+U 1 1 56902FC2
+P 4400 3900
+F 0 "R3" V 4480 3900 50  0000 C CNN
+F 1 "1kΩ" V 4400 3900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 4330 3900 30  0001 C CNN
+F 3 "" H 4400 3900 30  0000 C CNN
+	1    4400 3900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4100 3900 4250 3900
+Wire Wire Line
+	4550 3900 5250 3900
+Wire Wire Line
+	5250 3800 4850 3800
+Wire Wire Line
+	4550 3800 4100 3800
+Wire Wire Line
+	4100 3700 4250 3700
+Wire Wire Line
+	4550 3700 5250 3700
+Wire Wire Line
+	5250 3600 4850 3600
+Wire Wire Line
+	4550 3600 4100 3600
 $EndSCHEMATC
